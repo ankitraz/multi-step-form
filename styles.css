@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  background-color: hsl(213, 96%, 18%);
+}
+
+.step {
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  margin-right: 1.3rem;
+}
+.step:hover {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+  border-color: lightblue;
+}/*# sourceMappingURL=styles.css.map */
