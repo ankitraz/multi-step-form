@@ -24,14 +24,14 @@
 
         <div class="steps">
           <div class="step-group">
-            <span class="step step__focused">1</span>
+            <span class="step ">1</span>
             <div class="step__details">
               <p class="step__name">STEP 1</p>
               <p class="step__description">YOUR INFO</p>
             </div>
           </div>
           <div class="step-group">
-            <span class="step">2</span>
+            <span class="step step__focused">2</span>
             <div class="step__details">
               <p class="step__name">STEP 2</p>
               <p class="step__description">SELECT PLAN</p>
@@ -57,20 +57,38 @@
       <div class="card">
         <h2>Personal info</h2>
         <p>Please provide your name, email address, and phone number.</p>
-        <label for="">Name</label>
-        <input placeholder="e.g. Stephen King" class="input" type="text" />
+        <div class="plan-block grid grid--1x3">
+            <div class="plan">
+                <img src="assets/images/icon-arcade.svg" alt="">
+                <div class="plan__details">
+                    <p class="plan__name">Arcade</p>
+                    <p class="plan__price">$9/mo</p>
+                </div>
+            </div>
+            <div class="plan">
+                <img src="assets/images/icon-advanced.svg" alt="">
+                <div class="plan__details">
+                    <p class="plan__name">Arcade</p>
+                    <p class="plan__price">$9/mo</p>
+                </div>
+            </div>
+            <div class="plan">
+                <img src="assets/images/icon-pro.svg" alt="">
+                <div class="plan__details">
+                    <p class="plan__name">Arcade</p>
+                    <p class="plan__price">$9/mo</p>
+                </div>
+            </div>
+        </div>
 
-        <label for="">Email Address</label>
-        <input
-          placeholder="e.g. stephenking@lorem.com"
-          class="input"
-          type="text"
-        />
+        <div class="billing-cycle">
+            <span style="color: hsl(213, 96%, 18%);">Monthly</span>
+            <img src="/assets/images/toggle.png" alt="">
+            <span style="color: #ccc;">Yearly</span>
+          </div>
 
-        <label for="">Phone Number</label>
-        <input placeholder="e.g. +1 234 567 890" class="input" type="text" />
         <div class="card__btn">
-          <a href="step2.html"><button class="btn btn--primary">Next Step</button></a>
+          <button class="btn btn--primary">Next Step</button>
         </div>
       </div>
 
@@ -78,7 +96,7 @@
     </div>
     
     <div class="btn-group">
-      <a href="step2.html"><button class="btn btn--primary">Next Step</button></a>
+      <button class="btn btn--primary">Next Step</button>
     </div>
   </body>
 </html>
