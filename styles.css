@@ -14,7 +14,10 @@ body {
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.6rem;
-    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 }
 
@@ -277,6 +280,7 @@ label {
     row-gap: 1.6rem;
   }
   .step1 .card-wrapper {
+    margin-left: 1rem;
     position: relative;
   }
   .step1 .card-wrapper .card {
