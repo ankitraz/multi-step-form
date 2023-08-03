@@ -282,6 +282,7 @@ label {
   .step1 .card-wrapper {
     margin-left: 1rem;
     position: relative;
+    width: 100%;
   }
   .step1 .card-wrapper .card {
     width: 100%;
