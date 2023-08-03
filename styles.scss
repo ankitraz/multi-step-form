@@ -17,7 +17,8 @@ body {
 
     @media screen and (min-width: 768px) {
         font-size: 1.6rem;
-        // height: 100vh;
+        padding: 5rem;
+        // margin: 7rem;
     }
 
     
@@ -158,23 +159,21 @@ body {
     @media screen and (min-width: 768px) {
         & {
             flex-direction: column;
-            align-items: flex-start;
             padding-left: 2.2rem;
             padding-top: 2.2rem;
-            width: 12rem;
             
             img {
                 margin-right: 0;
-                margin-bottom: 5rem;
+                margin-bottom: 3rem;
             }
 
             .plan__details {
                 .plan__name {
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                 }
 
                 .plan__price{
-                    font-size: 1.7rem;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -183,8 +182,9 @@ body {
 
 // plan-block
 .plan-block {
-    column-gap: 2rem;
-
+    &.grid {
+        column-gap: 2rem;
+    }
 }
 
 
@@ -284,106 +284,92 @@ label {
 //======================================================
 // step-1
 
-.step-1{
-    height: 100vh;
-
-    .step_1_header{
-        position: relative;
-        .header__img{
-            content: url(assets/images/bg-sidebar-mobile.svg);
-            width: 100%;
-        }
-
-        .steps {
-            display: flex;
-            gap: 1.5rem;
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-
-            @media screen and (min-width: 768px) {
-                &{
-                    flex-direction: column;
-                }
-            }
-        }
-    }
-
-
-    .card {
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        padding: 2rem;
-        background-color: #fff;
-        border-radius: 7px;
-        margin: 2rem;
-        position: relative;
-        top: -7rem;
-
-        .btn{
-            display: none;
-        }
-    }
-
-}
-
-
-.btn-group{
-    display:flex;
-    justify-content: flex-end;
-    padding: 2rem;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-
-    @media screen and (min-width: 768px) {
-        &{
-            display: none;
-        }
-    }
-}
-
-@media screen and (min-width:768px) {
-    .step-1{
-
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        background-color: #fff;
+.step1 {
+    .steps {
         display: flex;
-        width: 57%;
-        height: 100%;
-        margin: auto;
-        margin-top: 5rem;
-        border-radius: 9px;
+        background-image: url(assets/images/bg-sidebar-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 7rem;
+        column-gap: 1.2rem;
+    }
+.card-wrapper{
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 2rem;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative;
+        top: -6rem;
 
-        .step_1_header{
-            .header__img{
-                margin-right: 24rem;
-                width: 100%;
-                content: url(assets/images/bg-sidebar-desktop.svg);
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                padding: 1.4rem;
+    }
+    .btn-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        background: #fff;
+        padding: 1rem;
+        padding-right: 2rem;
+        .btn {
+            display: block;
             }
         }
+    }
+}
 
-        .card {
+
+@media screen and (min-width: 768px) {
+    .step1 {
+        width: 800px;
+      display: flex;
+      margin: 0 auto;
+      background-color: white;
+        border-radius: 8px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        overflow: hidden;
+      
+      .steps {
+            flex-direction: column;
+            background-image: url(assets/images/bg-sidebar-desktop.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 5rem;
+            margin: 1.4rem;
+            justify-content: flex-start;
+            padding-right: 6.5rem;
+            row-gap: 1.6rem;
+        }
+
+        .card-wrapper {
             position: relative;
-            top: 0;
-            padding: 4rem;
-            box-shadow: none;
-
-            .btn{
+            .card {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+                position: initial;
+                border-radius: 0;
+                margin-bottom: 19rem;
+            }
+            .btn {
                 display: block;
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                margin: 2rem;
             }
         }
-
     }
 }
+
+
+
+
+
+
+
 
 a {
     text-decoration: none;

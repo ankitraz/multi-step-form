@@ -14,6 +14,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.6rem;
+    padding: 5rem;
   }
 }
 
@@ -124,24 +125,22 @@ body {
 @media screen and (min-width: 768px) {
   .plan {
     flex-direction: column;
-    align-items: flex-start;
     padding-left: 2.2rem;
     padding-top: 2.2rem;
-    width: 12rem;
   }
   .plan img {
     margin-right: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   .plan .plan__details .plan__name {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .plan .plan__details .plan__price {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 }
 
-.plan-block {
+.plan-block.grid {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
@@ -224,89 +223,76 @@ label {
   margin-right: 3rem;
 }
 
-.step-1 {
-  height: 100vh;
-}
-.step-1 .step_1_header {
-  position: relative;
-}
-.step-1 .step_1_header .header__img {
-  content: url(assets/images/bg-sidebar-mobile.svg);
-  width: 100%;
-}
-.step-1 .step_1_header .steps {
+.step1 .steps {
   display: flex;
-  gap: 1.5rem;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
+  background-image: url(assets/images/bg-sidebar-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
 }
-@media screen and (min-width: 768px) {
-  .step-1 .step_1_header .steps {
-    flex-direction: column;
-  }
-}
-.step-1 .card {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 2rem;
+.step1 .card-wrapper .card {
   background-color: #fff;
-  border-radius: 7px;
+  border-radius: 5px;
+  padding: 2rem;
   margin: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  top: -7rem;
+  top: -6rem;
 }
-.step-1 .card .btn {
-  display: none;
-}
-
-.btn-group {
+.step1 .card-wrapper .btn-wrapper {
   display: flex;
   justify-content: flex-end;
-  padding: 2rem;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
+  background: #fff;
+  padding: 1rem;
+  padding-right: 2rem;
 }
-@media screen and (min-width: 768px) {
-  .btn-group {
-    display: none;
-  }
+.step1 .card-wrapper .btn-wrapper .btn {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .step-1 {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #fff;
+  .step1 {
+    width: 800px;
     display: flex;
-    width: 57%;
-    height: 100%;
-    margin: auto;
-    margin-top: 5rem;
-    border-radius: 9px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
   }
-  .step-1 .step_1_header .header__img {
-    margin-right: 24rem;
-    width: 100%;
-    content: url(assets/images/bg-sidebar-desktop.svg);
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    padding: 1.4rem;
+  .step1 .steps {
+    flex-direction: column;
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    margin: 1.4rem;
+    justify-content: flex-start;
+    padding-right: 6.5rem;
+    row-gap: 1.6rem;
   }
-  .step-1 .card {
+  .step1 .card-wrapper {
     position: relative;
-    top: 0;
-    padding: 4rem;
-    box-shadow: none;
   }
-  .step-1 .card .btn {
+  .step1 .card-wrapper .card {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    position: initial;
+    border-radius: 0;
+    margin-bottom: 19rem;
+  }
+  .step1 .card-wrapper .btn {
     display: block;
     position: absolute;
     bottom: 0;
     right: 0;
+    margin: 2rem;
   }
 }
 a {
