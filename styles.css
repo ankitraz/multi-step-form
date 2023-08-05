@@ -9,7 +9,7 @@ html {
 body {
   font-size: 1.5rem;
   font-family: "Ubuntu", sans-serif;
-  background-color: #eef5ff;
+  background-color: #f8f9fe;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -226,6 +226,60 @@ label {
   margin-right: 3rem;
 }
 
+.total-block {
+  background: #f8f9fe;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+}
+.total-block hr {
+  color: #d2d1d1;
+  border-top: none;
+  margin-top: 1.5rem;
+}
+.total-block .total__plan-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-block .total__plan-name P {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.total-block .total__plan-name a {
+  color: #ccc;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-decoration-thickness: 2px;
+}
+.total-block .total__plan-name .price {
+  color: hsl(213, 96%, 18%);
+}
+.total-block .total__plan-name.total-child p, .total-block .total__plan-name.total-child span {
+  font-weight: normal;
+  color: #aeaeb8;
+}
+.total-block .total__plan-name.total-child span {
+  color: hsl(213, 96%, 18%);
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.greeting h2 {
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0;
+}
+.greeting p {
+  color: #aeaeb8;
+  text-align: center;
+}
+
 .step1 .steps {
   display: flex;
   background-image: url(assets/images/bg-sidebar-mobile.svg);
@@ -278,6 +332,7 @@ label {
     justify-content: flex-start;
     padding-right: 6.5rem;
     row-gap: 1.6rem;
+    border-radius: 7px;
   }
   .step1 .card-wrapper {
     margin-left: 1rem;
